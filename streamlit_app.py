@@ -16,6 +16,21 @@ TERRITORIAL_URL = "https://raw.githubusercontent.com/WhaleCancer/LichenThumbnail
 
 st.set_page_config(page_title="Lichen Search", layout="wide")
 
+# Force light mode
+st.markdown("""
+<style>
+    .stApp {
+        color-scheme: light;
+    }
+    .stApp > header {
+        background-color: transparent;
+    }
+    .stApp > div > div > div > div {
+        background-color: #ffffff;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # --- Helpers -----------------------------------------------------------------
 def get_initial_query() -> str:
     # Compatible with a wide range of Streamlit versions

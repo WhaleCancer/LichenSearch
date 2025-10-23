@@ -1,0 +1,2 @@
+# LichenThumbnail
+Lichen Thumbnail Test
